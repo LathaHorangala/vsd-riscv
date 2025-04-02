@@ -81,10 +81,20 @@ J-Type instructions perform unconditional jumps to a specified address while sto
 # bge a5,s2,1013c
 * B-Type instuction
 * Opcode(0-6):1100011
-* Immediate(7-11):imm[4:1|11] i.e.,01000
+* Immediate(7-11):imm[4:1|11] i.e.,11100
 * funct3(12-14):0x5 i.e.,101
 * rs1(15-19):a5=x15 i.e.,01111
 * rs2(20-24):s2=x18 i.e.,10010
 * Immediate(25-31):imm[12|10:5] i.e.,0001001
-* 32-bit instuction:0001001_10010_01111_101_01000_1100011
+* 32-bit instuction:0001001_10010_01111_101_11100_1100011
+
+# bne s0,s1,100f8
+* B-Type instuction
+* Opcode(0-6):1100011
+* Immediate(7-11):imm[4:1|11] i.e.,11000
+* funct3(12-14):0x1 i.e.,001
+* rs1(15-19):s0=x8 i.e.,01000
+* rs2(20-24):s1=x9 i.e.,01001
+* Immediate(25-31):imm[12|10:5] i.e.,0000111
+* 32-bit instuction:0000111_01001_01000_001_11000_1100011
 
