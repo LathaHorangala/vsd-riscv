@@ -67,5 +67,12 @@ J-Type instructions perform unconditional jumps to a specified address while sto
 * Opcode(0-6):1101111
 * rd(7-11):ra=x1 i.e.,00001
 * Immediate(12-31):imm[20|10:1|11|19:12] i.e.,00001111111100000010
-* 32-bit instuction:0000001_00001_00010_011_01000_0100011
+* 32-bit instuction:00001111111100000010_00001_1101111
+
+# lw s2,12(sp)
+* I-Type instuction
+* Opcode(0-6):0000011
+* rd(7-11):s2=x18 i.e.,10010
+* Immediate(12-31):imm[20|10:1|11|19:12] i.e.,00001111111100000010
+* 32-bit instuction:00001111111100000010_00001_1101111
 
