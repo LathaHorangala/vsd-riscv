@@ -35,3 +35,5 @@ J-Type instructions perform unconditional jumps to a specified address while sto
 
 
 ![Screenshot (145)](https://github.com/user-attachments/assets/205de7d2-c7d7-4b91-89dc-6cc1f30cb180)
+
+
