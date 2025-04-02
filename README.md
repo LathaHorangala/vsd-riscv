@@ -36,4 +36,16 @@ J-Type instructions perform unconditional jumps to a specified address while sto
 
 ![Screenshot (145)](https://github.com/user-attachments/assets/205de7d2-c7d7-4b91-89dc-6cc1f30cb180)
 
+# lui a0,0x2b
+U-Type instuction
+Opcode(0-6):0110111
+rd(7-11):a0 equivalent to x10 register i.e.,01010
+Immediate(12-31):with 12 bit left shifted value of 0x2b i.e.,00101011000000000000
+32-bit instruction:00101011000000000000_01010_0110111
+
+# addi sp,sp,-48
+I-Type instuction
+Opcode(0-6):0010011
+rd(7-11):sp=x2 i.e.,00010
+funct3(12-14):0x0 i.e.,000
 
