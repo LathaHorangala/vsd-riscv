@@ -12,8 +12,9 @@ Email:lathahorangala@gmail.com
 * Executed a C program to calculate the factorial of entered number and verified the output. 
 * Observed O1 and Ofast optimization for RISC-V object dump.
 * Generated RISC-V SPIKE and observed how the registers and stack pointer updates according to the main program.
-  # Task3
-  # RISC-V Instruction Types Explained in Sentences
+*
+# Task3
+# RISC-V Instruction Types 
 # R-Type (Register-Register Instructions)
 R-Type instructions perform arithmetic and logical operations using only registers. These instructions take two source registers as input and store the result in a destination register. They do not use immediate values or memory addresses. Examples include add, sub, and mul, which operate directly on register values.
 
