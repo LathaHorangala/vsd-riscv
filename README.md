@@ -12,7 +12,7 @@ Email:lathahorangala@gmail.com
 * Executed a C program to calculate the factorial of entered number and verified the output. 
 * Observed O1 and Ofast optimization for RISC-V object dump.
 * Generated RISC-V SPIKE and observed how the registers and stack pointer updates according to the main program.
-*
+
 # Task3
 # RISC-V Instruction Types 
 # R-Type (Register-Register Instructions)
@@ -97,4 +97,40 @@ J-Type instructions perform unconditional jumps to a specified address while sto
 * rs2(20-24):s1=x9 i.e.,01001
 * Immediate(25-31):imm[12|10:5] i.e.,0000111
 * 32-bit instuction:0000111_01001_01000_001_11000_1100011
+
+ # Task4
+ # Functional Simulation of RISC-V Core
+  * Objective: Perform a functional simulation of the given RISC-V Core Verilog netlist and testbench.
+![Screenshot (160)](https://github.com/user-attachments/assets/081f90f7-c885-4c46-ae3a-b51fce14917b)
+# 1. add r6,r1,r2
+![Screenshot (146)](https://github.com/user-attachments/assets/87e32f62-4a6e-4da4-902d-317a3b76705a)
+# 2. sub r7,r1,r2
+![Screenshot (147)](https://github.com/user-attachments/assets/c1319964-a0f7-4338-82fd-82bec48fa983)
+# 3. and r8,r1,r3
+![Screenshot (148)](https://github.com/user-attachments/assets/3fcddf8a-3e66-413c-b2b2-525cb0052dec)
+# 4. or r9,r2,r5
+![Screenshot (149)](https://github.com/user-attachments/assets/31c5e4a1-1bf8-4bcb-9a41-1f3fba11d4f6)
+# 5. xor r10,r1,r4
+![Screenshot (150)](https://github.com/user-attachments/assets/21fe030b-a759-40ab-8cc6-a0967c85c029)
+# 6. slt r11,r2,r4
+![Screenshot (151)](https://github.com/user-attachments/assets/58abf3b6-dc2e-416e-babb-496bb6faa1d1)
+# 7. addi r12,r4,5
+![Screenshot (167)](https://github.com/user-attachments/assets/746b7f13-aa38-4c99-a6b8-50bf8212c736)
+# 8. sw r3,r1,2
+![Screenshot (163)](https://github.com/user-attachments/assets/18b0c04e-6530-4938-9e62-603668003ea7)
+# 9. lw r13,r1,2
+![Screenshot (164)](https://github.com/user-attachments/assets/8e035440-29c4-40ce-b04d-9af950a21ed7)
+# 10. beq r0,r0,15
+![Screenshot (165)](https://github.com/user-attachments/assets/f73405e5-c1f3-405d-bb27-829ba60ef9d7)
+# 11. add r14,r2,r2
+![Screenshot (166)](https://github.com/user-attachments/assets/d7a4be99-06e6-4e83-ad71-0252b2b9adaa)
+
+
+
+
+
+
+
+
+
 
