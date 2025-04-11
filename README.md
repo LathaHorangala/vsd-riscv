@@ -138,10 +138,11 @@ This project demonstrates how to interface a VSD Squadron Mini microcontroller b
 * Jumper Wires
 * USB Cable (for power/programming)
 # Pin out diagram:
-![Uploading Pin out.png…]()
+![Pin out](https://github.com/user-attachments/assets/f96cfbe0-55b7-4db6-b76f-2f0f9d391d6e)
 # Circuit Connection
 ![Circuit](https://github.com/user-attachments/assets/c3512706-c6da-47b9-b0a2-5c221bb2e123)
 # Pin Details:
+![Screenshot (173)](https://github.com/user-attachments/assets/42bd3691-dffa-4431-8b14-985b40eb76f7)
 
 
 
