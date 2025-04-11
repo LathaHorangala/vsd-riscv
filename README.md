@@ -125,7 +125,23 @@ J-Type instructions perform unconditional jumps to a specified address while sto
 # 11. add r14,r2,r2
 ![Screenshot (166)](https://github.com/user-attachments/assets/d7a4be99-06e6-4e83-ad71-0252b2b9adaa)
 
-
+# Task5
+# Application Project
+# Project Name: Digital Number Display Using VSD Squadron Mini and 7-Segment Display
+# Overview
+This project demonstrates how to interface a VSD Squadron Mini microcontroller board with a 7-segment display to show numbers from 0 to 9. It helps in understanding digital output control and display driving, which can be further extended for timers, counters, or digital meters.
+# Components Required:
+* VSD Squadron Mini (Microcontroller Board)
+* 1 x 7-Segment Display (Common Cathode or Anode)
+* 220Ω Resistors (7x for each segment)
+* Breadboard
+* Jumper Wires
+* USB Cable (for power/programming)
+# Pin out diagram:
+![Uploading Pin out.png…]()
+# Circuit Connection
+![Circuit](https://github.com/user-attachments/assets/c3512706-c6da-47b9-b0a2-5c221bb2e123)
+# Pin Details:
 
 
 
