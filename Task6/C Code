@@ -1,0 +1,54 @@
+#include "debug.h"
+
+// Segment pins connected to PD0–PD7 (example mapping for VSD Mini)
+uint8_t segmentPins[8] = {GPIO_Pin_0, GPIO_Pin_7, GPIO_Pin_2, GPIO_Pin_3,
+                          GPIO_Pin_4, GPIO_Pin_5, GPIO_Pin_6};
+
+// Digit encoding for 7-segment display (common cathode)
+// Order: a b c d e f g dp
+uint8_t digitCodes[10] = {
+    0b11111100, // 0
+    0b01100000, // 1
+    0b11011010, // 2
+    0b11110010, // 3
+    0b01100110, // 4
+    0b10110110, // 5
+    0b10111110, // 6
+    0b11100000, // 7
+    0b11111110, // 8
+    0b11110110  // 9
+};
+
+void displayDigit(uint8_t digit) {
+    if (digit > 9) return;
+    uint8_t pattern = digitCodes[digit];
+
+    for (int i = 0; i < 8; i++) {
+        if (pattern & (1 << (7 - i)))
+            GPIO_SetBits(GPIOD, segmentPins[i]);
+        else
+            GPIO_ResetBits(GPIOD, segmentPins[i]);
+    }
+}
+
+int main(void) {
+    SystemInit();
+    Delay_Init();
+    USART_Printf_Init(115200);
+
+    RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE);
+
+    GPIO_InitTypeDef GPIO_InitStructure = {
+        .GPIO_Pin = GPIO_Pin_All,
+        .GPIO_Speed = GPIO_Speed_50MHz,
+        .GPIO_Mode = GPIO_Mode_Out_PP
+    };
+    GPIO_Init(GPIOD, &GPIO_InitStructure);
+
+    while (1) {
+        for (uint8_t i = 0; i < 10; i++) {
+            displayDigit(i);
+            Delay_Ms(2500);
+        }
+    }
+}
