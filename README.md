@@ -144,7 +144,8 @@ This project demonstrates how to interface a VSD Squadron Mini microcontroller b
 # Pin Details:
 ![Screenshot (173)](https://github.com/user-attachments/assets/42bd3691-dffa-4431-8b14-985b40eb76f7)
 
-
+# Task6 : Project Video
+https://drive.google.com/file/d/1NsWUeK5ZaTsKqSkvJV48xU5OLXg7q-4l/view?usp=drivesdk
 
 
 
